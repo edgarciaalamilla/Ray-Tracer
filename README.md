@@ -1,4 +1,4 @@
 # Ray-Tracer
 A ray tracer implemented in C++.
 
-![Output] (screenshot)
+![Output] (https://github.com/edgarciaalamilla/Ray-Tracer/blob/master/screenshot.png)
