@@ -1,11 +1,3 @@
-//
-//  Vector.hpp
-//  HW4
-//
-//  Created by Craig, Tucker on 10/31/18.
-//  Copyright © 2018 tucker. All rights reserved.
-//
-
 #ifndef Vector_hpp
 #define Vector_hpp
 
