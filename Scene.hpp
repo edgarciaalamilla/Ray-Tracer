@@ -11,9 +11,15 @@
 class Scene{
 private:
     const char *destination;
+    Vector lightSource;
+    Vector direction;
+
+    void addSpheres(Image, vector<Sphere> &);
+    Color calcPixelColor(Sphere, float, Vector);
 
 public:
     Scene(const char* destination);
-    void createScene();
+    ~Scene();
+    void createImage();
 };
 #endif /* Color_hpp */

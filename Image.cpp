@@ -17,11 +17,6 @@
 //  based on code from stack overflow: http://stackoverflow.com/questions/2693631/read-ppm-file-and-store-it-in-an-array-coded-with-c
 
 
-/*
- Create a new blank image
- */
-//default constructor
-
 Image::Image(){
     width = DEFAULT_DIM;
     height = DEFAULT_DIM;
