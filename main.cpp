@@ -1,6 +1,7 @@
 #include "Scene.hpp"
 
 
+
 int main(int argc, char * argv[]) {
 
     srand(time(NULL)); //set random time seed

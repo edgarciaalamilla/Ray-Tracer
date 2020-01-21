@@ -1,17 +1,17 @@
 #include <stdlib.h>
 #include "Sphere.hpp"
 
-Sphere::Sphere(float x, float y, float z, float r) : radius{r} {
-
-    center = Vector(x,y,z);
-
-    color = Color(  rand() / (RAND_MAX + 1.0), 
-                    rand() / (RAND_MAX + 1.0),
-                    rand() / (RAND_MAX + 1.0));
+Sphere::Sphere(float x, float y, float z, float r) :    center{Vector{x,y,z}}, 
+                                                        radius{r},
+                                                        ambient{Color(.1,.1,.1)},
+                                                        specular{Color(1,1,1)}
+                                                        {
+    color = Color(  (float) rand() / (RAND_MAX + 1.0), 
+                    (float) rand() / (RAND_MAX + 1.0), 
+                    (float) rand() / (RAND_MAX + 1.0));
+    diffuse = color;
 
     diffuse = color;
-    ambient = Color(.1,.1,.1);
-    specular = Color(1,1,1);
     shininess = (float) (rand() % 128) + 1;
 }
 

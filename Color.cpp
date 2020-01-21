@@ -7,9 +7,10 @@
 //
 
 #include "Color.hpp"
+#include <stdlib.h>
 
 //C++11 Constructors using initializer lists
-Color::Color() : m_color{0.0, 0.0, 0.0} {}
+Color::Color() : m_color{0.0,0.0,0.0} {}
 Color::Color(float r, float g, float b) : m_color{r,g,b} {}
 
 Color::~Color(){}

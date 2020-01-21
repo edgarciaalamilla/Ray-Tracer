@@ -1,4 +1,5 @@
 #include "Scene.hpp"
+#include <vector>
 
 Scene::Scene(const char *destination) : destination{destination} {
     lightSource = Vector(500,500,5);

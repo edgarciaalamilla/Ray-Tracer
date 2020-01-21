@@ -14,7 +14,7 @@ private:
     Vector lightSource;
     Vector direction;
 
-    void addSpheres(Image, vector<Sphere> &);
+    //void addSpheres(Image, std::vector<Sphere> &);
     Color calcPixelColor(Sphere, float, Vector);
 
 public:

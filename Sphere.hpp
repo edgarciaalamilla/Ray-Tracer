@@ -10,9 +10,9 @@ private:
     float radius;
     Vector center;
     Color ambient;
-    Color diffuse;
     Color specular;
     Color color;
+    Color diffuse;
     float shininess;
     
 public:
