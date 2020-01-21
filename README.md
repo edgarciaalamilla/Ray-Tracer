@@ -4,7 +4,8 @@ A simple ray-tracer implemented in C++.
 ![Program output](https://raw.githubusercontent.com/edgarciaalamilla/Ray-Tracer/master/screenshot.jpg)
 
 ## How it works
-A scene object is instantiated in main.cpp and calls its createImage() method. The scene object has a lightsource property that determines the light source location, and also has a direction property that indicates the direction that rays will go. When the scene object calls createImage(), a sphere vector is instantiated and spheres are added to the vector. Spheres are then taken from the array one by one and orthographic projection is utilized to cast a ray into the scene through each pixel. If the ray hits a sphere object, then I calculate the pixel color using Phong's lighting equation using calcPixelColor() and set the pixel color in the image.
+A scene object is instantiated in main.cpp and calls its createImage() method. The scene object has a lightsource property that determines the light source location, and also has a direction property that indicates the direction that rays will go. When the scene object calls createImage(), a sphere vector is instantiated and spheres are added to the vector. Spheres are then taken from the array one by one. We then cast a ray from each pixel in the scene and determining whether the casted ray hits a sphere object on the scene. Lighting is then calculated by the phong lighting model, which takes into account the ambient color, diffuse color, and specular color. The phong lighting model requires that the light direction vector and the vector normal to the object be known. We utilize this information in calcPixelColor() and set the pixel color in the image.
+
 
 ## How to Compile/Run
 To compile the program, use:
